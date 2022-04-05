@@ -8,44 +8,58 @@
    <title>Survey</title>
 </head>
 <body>
+
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="name">Enter your name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
   
-  <form id="formone">
-    <div class="form-group">
-      <label for="name">Enter your name:</label>
-      <input id="name" class="form-control" type="text">
+          <div class="form-group">
+            <label for="born">Enter your birthday:</label>
+              <input id="born" class="form-control" type="date">
+          </div>
+  
+          <p>Pick your favorite music:</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="Rock & roll" checked>
+              Rock & roll
+              </label>
+            </div>
+           
+           
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="country">
+              Country
+            </label>
+          </div>
+  
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="jazz">
+              Jazz
+            </label>
+          </div>
+  
+          <button type="submit" class="btn">Submit here</button>
+        </form>
+      </div>
+  
+      <div id="story">
+        
+        <p>Hello  
+          <span class="name"></span>! Your birthday is 
+          <span id="dob"></span> and you like 
+          <span id="music"></span> music. 
+        </p>
+      </div>
     </div>
-
-    <div class="form-group">
-      <label for="music">Favorite music:</label>
-      <div class="radio">
-      <label>
-        <input type="radio" name="music" value="Rock" checked>
-        Rock
-      </label>
-    </div>
-    
-    <div class="radio">
-      <label>
-        <input type="radio" name="music" value="country">
-        Country
-      </label>
-    </div>
-
-    <div class="form-group">
-      <label for="born">Date of birth:</label>
-      <input id="born" class="form-control" type="date">
-    </div>
-
-    <button type="submit" class="btn">Show me the result</button>
-
-    <div id="story">
-      <p>
-      Hello!, <span id="name"></span> your favorite music is <span id="music"></span> your dob is <span id="dob"></span>
-      </p>
-    </div>
-
-
-  </form>
-
-</body>
+  </body>
+  
 </html>
